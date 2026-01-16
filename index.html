@@ -1,62 +1,73 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-active-lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Registros Latam | Consultoría Regulatoria & Científica</title>
-  <meta name="description" content="Registros Latam integra experiencia científica y conocimiento regulatorio para apoyar registros y gestión regulatoria de insumos agrícolas en Latinoamérica." />
+  <title>Registros Latam | Consultoría Regulatoria y Científica</title>
+  <meta name="description" content="Consultoría regulatoria y científica para agroinsumos en América Latina. Estrategia regional, ejecución local. Coordinación, métodos analíticos, estudios y capacitación." />
   <style>
-    :root{
-      --bg:#ffffff; --text:#111827; --muted:#6b7280; --line:#e5e7eb;
-      --brand:#0f766e; --brand2:#115e59; --card:#f9fafb;
-      --radius:16px;
-    }
-    *{box-sizing:border-box}
-    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif;
-      background:var(--bg); color:var(--text); line-height:1.55;}
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1040px; margin:0 auto; padding:24px}
-    header{border-bottom:1px solid var(--line); background:linear-gradient(180deg,#ffffff, #fbfbfb)}
-    .topbar{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 24px}
-    .logo{display:flex; flex-direction:column; gap:2px}
-    .logo strong{font-size:18px; letter-spacing:.2px}
-    .logo span{font-size:13px; color:var(--muted)}
-    nav{display:flex; gap:14px; flex-wrap:wrap; align-items:center}
-    .btn{display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border-radius:999px;
-      border:1px solid var(--line); background:#fff; color:var(--text); font-size:14px; cursor:pointer}
-    .btn.primary{background:var(--brand); border-color:var(--brand); color:#fff}
-    .btn.primary:hover{background:var(--brand2); text-decoration:none}
-    .btn:focus{outline:3px solid rgba(15,118,110,.25); outline-offset:2px}
-    .hero{padding:28px 24px 10px}
-    .hero-grid{display:grid; grid-template-columns: 1.15fr .85fr; gap:18px; align-items:start}
-    .kicker{color:var(--brand); font-weight:600; font-size:14px}
-    h1{margin:8px 0 10px; font-size:38px; line-height:1.1}
-    .lead{font-size:16px; color:var(--muted); max-width:70ch}
-    .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px}
-    .card h2{margin:0 0 8px; font-size:18px}
-    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px}
-    .section{padding:18px 0}
-    .section h2{font-size:22px; margin:0 0 10px}
-    .muted{color:var(--muted)}
-    ul{margin:10px 0 0 18px}
-    li{margin:6px 0}
-    footer{border-top:1px solid var(--line); margin-top:18px}
-    .foot{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; padding:18px 24px; color:var(--muted); font-size:13px}
-    .lang{display:flex; gap:8px; align-items:center}
-    .pill{padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:#fff; cursor:pointer; font-size:13px}
-    .pill.active{background:rgba(15,118,110,.10); border-color:rgba(15,118,110,.35); color:var(--brand2); font-weight:600}
-    .badge{display:inline-flex; gap:8px; align-items:center; padding:8px 10px; border-radius:999px; border:1px solid var(--line); background:#fff; color:var(--muted); font-size:13px}
-    @media (max-width:900px){
-      .hero-grid{grid-template-columns:1fr}
-      h1{font-size:32px}
-      .grid2{grid-template-columns:1fr}
-      .topbar{flex-direction:column; align-items:flex-start}
-    }
-    /* Language toggling */
-    [data-lang]{display:none}
-    html[data-active-lang="es"] [data-lang="es"]{display:block}
-    html[data-active-lang="en"] [data-lang="en"]{display:block}
+
+:root{
+  --bg:#F7F4EF;        /* arena suave (PDF) */
+  --text:#2B2B2B;      /* gris oscuro cálido */
+  --muted:#6E6E6E;     /* gris medio cálido */
+  --line:#DDD6CC;      /* líneas / separadores */
+  --brand:#9C8B6D;     /* acento principal */
+  --brand2:#7E6F55;    /* acento oscuro */
+  --card:#FFFFFF;      /* tarjetas */
+  --radius:16px;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.55;}
+a{color:var(--brand2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:24px}
+header{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#ffffff, var(--bg))}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px}
+.logo{display:flex;flex-direction:column;gap:2px}
+.logo strong{font-size:18px;letter-spacing:.2px}
+.logo span{font-size:13px;color:var(--muted)}
+nav{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;color:var(--text);font-size:14px;cursor:pointer}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.btn.primary:hover{background:var(--brand2);text-decoration:none}
+.btn:focus{outline:3px solid rgba(156,139,109,.25);outline-offset:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.section{padding:18px 0}
+.section h2{font-size:22px;margin:0 0 10px}
+.muted{color:var(--muted)}
+ul{margin:10px 0 0 18px}
+li{margin:6px 0}
+footer{border-top:1px solid var(--line);margin-top:18px}
+.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:18px 24px;color:var(--muted);font-size:13px}
+.lang{display:flex;gap:8px;align-items:center}
+.pill{padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:13px}
+.pill.active{background:rgba(156,139,109,.16);border-color:rgba(126,111,85,.45);color:var(--brand2);font-weight:700}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;border:1px solid var(--line);
+  background:#fff;color:var(--muted);font-size:13px}
+[data-lang]{display:none}
+html[data-active-lang="es"] [data-lang="es"]{display:block}
+html[data-active-lang="en"] [data-lang="en"]{display:block}
+@media (max-width:900px){
+  .topbar{flex-direction:column;align-items:flex-start}
+}
+
+.hero{padding:34px 0 12px}
+.hero-cover{
+  border-bottom:1px solid var(--line);
+  background:
+    linear-gradient(rgba(247,244,239,.86), rgba(247,244,239,.86)),
+    url('hero.jpg') center/cover no-repeat;
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:start}
+.kicker{color:var(--brand2);font-weight:800;font-size:14px;letter-spacing:.2px}
+h1{margin:10px 0 10px;font-size:38px;line-height:1.1}
+.lead{font-size:16px;color:var(--muted);max-width:75ch}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}h1{font-size:32px}.grid2{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -64,14 +75,24 @@
   <div class="topbar">
     <div class="logo">
       <strong>Registros Latam</strong>
-      <span>Consultoría regulatoria y científica para agroinsumos en Latinoamérica</span>
+      <span data-lang="es">Consultoría regulatoria y científica para agroinsumos en América Latina</span>
+      <span data-lang="en">Regulatory & scientific consulting for agro-inputs in Latin America</span>
     </div>
     <nav>
-      <a class="btn" href="index.html#services" data-i18n="nav_services">Servicios</a>
-      <a class="btn" href="index.html#about" data-i18n="nav_about">Misión & Visión</a>
-      <a class="btn" href="perfil.html" data-i18n="nav_profile">Perfil</a>
-      <a class="btn primary" href="index.html#contact" data-i18n="nav_contact">Contacto</a>
+      <a class="btn" href="#services" data-lang="es">Servicios</a>
+      <a class="btn" href="#services" data-lang="en">Services</a>
+
+      <a class="btn" href="#about" data-lang="es">Misión & Visión</a>
+      <a class="btn" href="#about" data-lang="en">Mission & Vision</a>
+
+      <a class="btn" href="perfil.html" data-lang="es">Perfil</a>
+      <a class="btn" href="perfil.html" data-lang="en">Profile</a>
+
+      <a class="btn primary" href="#contact" data-lang="es">Contacto</a>
+      <a class="btn primary" href="#contact" data-lang="en">Contact</a>
+
       <span class="badge">📍 Rionegro, Antioquia · 📞 +57 313 613 8748 · ✉️ cristina.leon@registroslatam.com</span>
+
       <div class="lang" aria-label="Language toggle">
         <button class="pill active" id="btn-es" type="button">ES</button>
         <button class="pill" id="btn-en" type="button">EN</button>
@@ -80,141 +101,159 @@
   </div>
 </header>
 
-<main class="wrap">
-  <section class="hero">
-    <div class="hero-grid">
-      <div>
-        <div class="kicker" data-lang="es">Soporte regulatorio y científico</div>
-        <div class="kicker" data-lang="en">Regulatory & scientific support</div>
+<section class="hero-cover">
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker" data-lang="es">Soporte regulatorio y científico</div>
+          <div class="kicker" data-lang="en">Regulatory & scientific support</div>
 
-        <h1 data-lang="es">Estrategia regional, ejecución local.</h1>
-        <h1 data-lang="en">Regional strategy, local execution.</h1>
+          <h1 data-lang="es">Estrategia regional, ejecución local.</h1>
+          <h1 data-lang="en">Regional strategy, local execution.</h1>
 
-        <p class="lead" data-lang="es">
-          Registros Latam integra experiencia científica y conocimiento regulatorio para apoyar a productores,
-          distribuidores y consultoras del negocio de agroinsumos en Latinoamérica, entregando soluciones eficaces,
-          confiables y alineadas con los marcos regulatorios.
-        </p>
-        <p class="lead" data-lang="en">
-          Registros Latam integrates scientific expertise and regulatory knowledge to support producers,
-          distributors and consulting companies in the agro-inputs business in Latin America, delivering effective,
-          reliable and compliant solutions.
-        </p>
+          <p class="lead" data-lang="es">
+            Registros Latam integra experiencia científica y conocimientos regulatorios para brindar soporte a empresas productoras,
+            distribuidoras y consultoras del negocio de agroinsumos en América Latina. Nuestra fortaleza reside en el conocimiento
+            actualizado de la ciencia y los marcos regulatorios, lo que permite ofrecer soluciones eficaces, fiables y conformes
+            para el registro de productos y la gestión regulatoria.
+          </p>
+          <p class="lead" data-lang="en">
+            Registros Latam integrates scientific expertise and regulatory knowledge to support producer, distributor and consulting
+            companies in the agro-inputs business in Latin America. Our strength lies in our up-to-date understanding of science and
+            regulatory frameworks, enabling us to deliver effective, reliable, and compliant solutions for product registration and
+            regulatory management.
+          </p>
 
-        <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap">
-          <a class="btn primary" href="index.html#contact" data-lang="es">Solicitar contacto</a>
-          <a class="btn primary" href="index.html#contact" data-lang="en">Request contact</a>
+          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn primary" href="#contact" data-lang="es">Solicitar contacto</a>
+            <a class="btn primary" href="#contact" data-lang="en">Request contact</a>
 
-          <a class="btn" href="perfil.html" data-lang="es">Ver perfil</a>
-          <a class="btn" href="perfil.html" data-lang="en">View profile</a>
+            <a class="btn" href="perfil.html" data-lang="es">Ver perfil</a>
+            <a class="btn" href="perfil.html" data-lang="en">View profile</a>
+          </div>
         </div>
+
+        <aside class="card">
+          <h2 style="margin:0 0 8px;font-size:18px" data-lang="es">En qué ayudamos</h2>
+          <h2 style="margin:0 0 8px;font-size:18px" data-lang="en">How we help</h2>
+
+          <ul class="muted" data-lang="es">
+            <li>Coordinación estratégica y apoyo continuo a consultores regulatorios locales en América Latina.</li>
+            <li>Punto único de contacto para alinear la estrategia regulatoria regional con la ejecución local.</li>
+            <li>Revisión y análisis de métodos analíticos y estudios que respaldan las presentaciones regulatorias.</li>
+            <li>Implementación, validación y transferencia de métodos analíticos.</li>
+            <li>Seguimiento de estudios bajo GLP, no GLP e ISO-17025 (Química y Residuos).</li>
+          </ul>
+
+          <ul class="muted" data-lang="en">
+            <li>Strategic coordination and ongoing support to local regulatory consultants across Latin America.</li>
+            <li>Single point of contact to align regional regulatory strategy with local execution.</li>
+            <li>Review and analysis of analytical methods and studies supporting regulatory submissions.</li>
+            <li>Implementation, validation, and transfer of analytical methods.</li>
+            <li>Study monitoring under GLP, non-GLP, ISO-17025 (Chemistry and Residues studies).</li>
+          </ul>
+        </aside>
       </div>
+    </section>
+  </main>
+</section>
 
-      <aside class="card">
-        <h2 data-lang="es">En qué ayudamos</h2>
-        <h2 data-lang="en">How we help</h2>
-        <ul class="muted" data-lang="es">
-          <li>Coordinación estratégica y soporte continuo a consultores locales en LATAM.</li>
-          <li>Revisión y análisis de métodos analíticos y estudios para expedientes regulatorios.</li>
-          <li>Implementación, validación y transferencia de métodos analíticos.</li>
-          <li>Capacitación a actores industriales y regulatorios.</li>
-        </ul>
-        <ul class="muted" data-lang="en">
-          <li>Strategic coordination and ongoing support to local regulatory consultants across LATAM.</li>
-          <li>Review and analysis of analytical methods and studies supporting regulatory submissions.</li>
-          <li>Implementation, validation and transfer of analytical methods.</li>
-          <li>Training for industrial and regulatory stakeholders.</li>
-        </ul>
-      </aside>
-    </div>
-  </section>
-
+<main class="wrap">
   <section id="about" class="section">
     <div class="grid2">
       <div class="card">
-        <h2 data-lang="es">Misión</h2>
-        <h2 data-lang="en">Mission</h2>
+        <h2 data-lang="es">Nuestra Misión</h2>
+        <h2 data-lang="en">Our Mission</h2>
         <p class="muted" data-lang="es">
-          Registros Latam integra experiencia científica y conocimiento regulatorio para apoyar a productores,
-          distribuidores y consultoras del negocio de agroinsumos en Latinoamérica. Nuestra fortaleza es el entendimiento
-          actualizado de la ciencia y de los marcos regulatorios, para entregar soluciones efectivas, confiables y
-          en cumplimiento.
+          Registros Latam integra experiencia científica y conocimientos regulatorios para brindar soporte a empresas productoras,
+          distribuidoras y consultoras pertenecientes al negocio de agroinsumos en América Latina. Nuestra fortaleza reside en
+          nuestro conocimiento actualizado de la ciencia y marcos regulatorios, lo que nos permite ofrecer soluciones eficaces,
+          fiables y conformes para el registro de productos y la gestión regulatoria.
         </p>
         <p class="muted" data-lang="en">
-          Registros Latam integrates scientific expertise and regulatory knowledge to support producers,
-          distributors and consulting companies in the agro-inputs business in Latin America. Our strength lies in an up-to-date
-          understanding of science and regulatory frameworks to deliver effective, reliable, and compliant solutions.
+          Registros Latam integrates scientific expertise and regulatory knowledge to support producer, distributor and consulting
+          companies in the agro-inputs business in Latin America. Our strength lies in our up-to-date understanding of science and
+          regulatory frameworks, enabling us to deliver effective, reliable, and compliant solutions for product registration and
+          regulatory management.
         </p>
       </div>
       <div class="card">
-        <h2 data-lang="es">Visión</h2>
-        <h2 data-lang="en">Vision</h2>
+        <h2 data-lang="es">Nuestra Visión</h2>
+        <h2 data-lang="en">Our Vision</h2>
         <p class="muted" data-lang="es">
-          Ser un referente regional en consultoría regulatoria técnica y científica para insumos agrícolas,
-          apoyando tanto a consultoras establecidas como a actores de la industria, promoviendo la armonización regulatoria
-          y el desarrollo regulatorio sostenible en Latinoamérica.
+          Convertirse en un referente regional en consultoría regulatoria técnica y científica para insumos agrícolas, proporcionando
+          apoyo especializado tanto a consultoras consolidadas, como a empresas del sector, promoviendo al mismo tiempo la armonización
+          y el desarrollo regulatorios sostenible en América Latina.
         </p>
         <p class="muted" data-lang="en">
-          To become a regional benchmark in technical and scientific regulatory consulting for agricultural inputs,
-          supporting both established consultancies and industry stakeholders, while promoting regulatory harmonization
-          and sustainable regulatory development across Latin America.
+          To become a regional benchmark in technical and scientific regulatory consulting for agricultural inputs, providing specialized
+          support to both established consultancies and industry stakeholders, while promoting regulatory harmonization and sustainable
+          regulatory development across Latin America.
         </p>
       </div>
     </div>
   </section>
 
   <section id="services" class="section">
-    <h2 data-lang="es">Servicios</h2>
-    <h2 data-lang="en">Services</h2>
+    <h2 data-lang="es">Nuestros Servicios</h2>
+    <h2 data-lang="en">Our Services</h2>
 
     <div class="grid2">
       <div class="card">
-        <h2 data-lang="es">Soporte regulatorio estratégico</h2>
-        <h2 data-lang="en">Strategic regulatory support</h2>
+        <h2 style="margin:0 0 8px;font-size:18px" data-lang="es">Apoyo Regulatorio Estratégico</h2>
+        <h2 style="margin:0 0 8px;font-size:18px" data-lang="en">Strategic Regulatory Support</h2>
+
         <ul class="muted" data-lang="es">
-          <li>Coordinación estratégica y soporte continuo a consultores regulatorios locales en LATAM.</li>
-          <li>Punto único de contacto para alinear estrategia regional con ejecución local.</li>
+          <li>Coordinación estratégica y apoyo continuo a consultores regulatorios locales en América Latina.</li>
+          <li>Punto único de contacto para alinear la estrategia regulatoria regional con la ejecución local.</li>
         </ul>
         <ul class="muted" data-lang="en">
-          <li>Strategic coordination and ongoing support to local regulatory consultants across LATAM.</li>
+          <li>Strategic coordination and ongoing support to local regulatory consultants across Latin America.</li>
           <li>Single point of contact to align regional regulatory strategy with local execution.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2 data-lang="es">Acompañamiento técnico y científico</h2>
-        <h2 data-lang="en">Technical & scientific accompaniment</h2>
+        <h2 style="margin:0 0 8px;font-size:18px" data-lang="es">Acompañamiento Técnico y Científico</h2>
+        <h2 style="margin:0 0 8px;font-size:18px" data-lang="en">Technical & Scientific Advising</h2>
+
         <ul class="muted" data-lang="es">
-          <li>Revisión y análisis de métodos analíticos y estudios que soportan expedientes regulatorios.</li>
-          <li>Asesoría para implementación, validación y transferencia de métodos analíticos.</li>
-          <li>Justificaciones técnico-científicas robustas para procesos de registro.</li>
+          <li>Revisión y análisis de métodos analíticos y estudios que respaldan las presentaciones regulatorias.</li>
+          <li>Servicios de asesoramiento para la implementación, validación y transferencia de métodos analíticos.</li>
+          <li>Desarrollo de justificaciones técnicas y científicas sólidas para apoyar los procesos de registro, y respuesta a requerimientos.</li>
+          <li>Seguimiento de estudios bajo GLP, no GLP, ISO-17025 en estudios de Química y de Residuos.</li>
         </ul>
+
         <ul class="muted" data-lang="en">
           <li>Review and analysis of analytical methods and studies supporting regulatory submissions.</li>
-          <li>Advisory services for implementation, validation and transfer of analytical methods.</li>
-          <li>Robust technical and scientific justifications to support registration processes.</li>
+          <li>Advisory services for the implementation, validation, and transfer of analytical methods.</li>
+          <li>Development of robust technical and scientific justifications to support registration processes, and response to requirements.</li>
+          <li>Study monitoring under GLP, non-GLP, ISO-17025 in Chemistry and Residues studies.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2 data-lang="es">Capacitación</h2>
-        <h2 data-lang="en">Training & capacity building</h2>
+        <h2 style="margin:0 0 8px;font-size:18px" data-lang="es">Formación y Fortalecimiento de Capacidades</h2>
+        <h2 style="margin:0 0 8px;font-size:18px" data-lang="en">Training & Capacity Building</h2>
+
         <ul class="muted" data-lang="es">
-          <li>Programas de formación a actores industriales y regulatorios sobre métodos analíticos y estudios regulatorios.</li>
+          <li>Programas de formación para actores industriales y regulatorios sobre métodos analíticos, estudios regulatorios entre otros.</li>
         </ul>
         <ul class="muted" data-lang="en">
-          <li>Training programs for industrial and regulatory actors on analytical methods and regulatory studies.</li>
+          <li>Training programs for industrial and regulatory actors on analytical methods, regulatory studies, among others.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2 data-lang="es">Investigación científica</h2>
-        <h2 data-lang="en">Scientific research</h2>
+        <h2 style="margin:0 0 8px;font-size:18px" data-lang="es">Investigación científica</h2>
+        <h2 style="margin:0 0 8px;font-size:18px" data-lang="en">Scientific Research</h2>
+
         <ul class="muted" data-lang="es">
-          <li>Búsqueda bibliográfica y análisis crítico (Scopus, PubMed, SciFinder, Google Scholar, Web of Science, AGRIS).</li>
+          <li>Investigación bibliográfica y análisis crítico utilizando bases de datos científicas líderes (Scopus, PubMed, SciFinder, Google Scholar, Web of Science, AGRIS).</li>
         </ul>
         <ul class="muted" data-lang="en">
-          <li>Bibliographic research and critical analysis using leading databases (Scopus, PubMed, SciFinder, Google Scholar, Web of Science, AGRIS).</li>
+          <li>Bibliographic research and critical analysis using leading scientific databases (Scopus, PubMed, SciFinder, Google Scholar, Web of Science, AGRIS).</li>
         </ul>
       </div>
     </div>
@@ -224,14 +263,11 @@
     <div class="card">
       <h2 data-lang="es">Contacto</h2>
       <h2 data-lang="en">Contact</h2>
-      <p class="muted" data-lang="es">
-        ¿Quieres agendar una conversación o solicitar una propuesta? Escríbenos:
-      </p>
-      <p class="muted" data-lang="en">
-        Want to schedule a call or request a proposal? Get in touch:
-      </p>
 
-      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:10px">
+      <p class="muted" data-lang="es">¿Quieres agendar una conversación o solicitar una propuesta? Escríbenos:</p>
+      <p class="muted" data-lang="en">Want to schedule a call or request a proposal? Get in touch:</p>
+
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
         <a class="btn primary" href="mailto:cristina.leon@registroslatam.com">cristina.leon@registroslatam.com</a>
         <a class="btn" href="tel:+573136138748">+57 313 613 8748</a>
         <span class="btn" style="cursor:default">Rionegro, Antioquia</span>
@@ -255,43 +291,24 @@
 </footer>
 
 <script>
-  (function(){
-    const root = document.documentElement;
-    root.setAttribute("data-active-lang", "es");
+(function(){
+  const root=document.documentElement;
+  const btnEs=document.getElementById("btn-es");
+  const btnEn=document.getElementById("btn-en");
 
-    const btnEs = document.getElementById("btn-es");
-    const btnEn = document.getElementById("btn-en");
+  function setLang(lang){
+    root.setAttribute("data-active-lang", lang);
+    btnEs.classList.toggle("active", lang==="es");
+    btnEn.classList.toggle("active", lang==="en");
+    try{localStorage.setItem("rl_lang", lang);}catch(e){}
+  }
 
-    function setLang(lang){
-      root.setAttribute("data-active-lang", lang);
-      btnEs.classList.toggle("active", lang === "es");
-      btnEn.classList.toggle("active", lang === "en");
+  btnEs.addEventListener("click", ()=>setLang("es"));
+  btnEn.addEventListener("click", ()=>setLang("en"));
 
-      // update nav labels
-      const labels = {
-        es: { nav_services:"Servicios", nav_about:"Misión & Visión", nav_profile:"Perfil", nav_contact:"Contacto" },
-        en: { nav_services:"Services", nav_about:"Mission & Vision", nav_profile:"Profile", nav_contact:"Contact" }
-      };
-      document.querySelectorAll("[data-i18n]").forEach(el=>{
-        const key = el.getAttribute("data-i18n");
-        el.textContent = labels[lang][key] || el.textContent;
-      });
-
-      // Remember preference
-      try{ localStorage.setItem("rl_lang", lang); }catch(e){}
-    }
-
-    btnEs.addEventListener("click", ()=>setLang("es"));
-    btnEn.addEventListener("click", ()=>setLang("en"));
-
-    // Restore preference
-    try{
-      const saved = localStorage.getItem("rl_lang");
-      if(saved === "en") setLang("en");
-    }catch(e){}
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-  })();
+  try{const saved=localStorage.getItem("rl_lang"); if(saved==="en") setLang("en");}catch(e){}
+  document.getElementById("year").textContent=new Date().getFullYear();
+})();
 </script>
 </body>
 </html>

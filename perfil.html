@@ -1,57 +1,71 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-active-lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Perfil | Cristina León | Registros Latam</title>
-  <meta name="description" content="Perfil profesional de Cristina León (M.Sc., Ph.D.) con experiencia en química analítica, asuntos regulatorios y gestión de calidad." />
+  <meta name="description" content="Perfil profesional de Cristina León (M.Sc., Ph.D.) con experiencia en química analítica, asuntos regulatorios y gestión de calidad para el sector agroquímico y de alimentos." />
   <style>
-    :root{
-      --bg:#ffffff; --text:#111827; --muted:#6b7280; --line:#e5e7eb;
-      --brand:#0f766e; --brand2:#115e59; --card:#f9fafb;
-      --radius:16px;
-    }
-    *{box-sizing:border-box}
-    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif;
-      background:var(--bg); color:var(--text); line-height:1.55;}
-    a{color:var(--brand); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1040px; margin:0 auto; padding:24px}
-    header{border-bottom:1px solid var(--line); background:linear-gradient(180deg,#ffffff, #fbfbfb)}
-    .topbar{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 24px}
-    .logo{display:flex; flex-direction:column; gap:2px}
-    .logo strong{font-size:18px; letter-spacing:.2px}
-    .logo span{font-size:13px; color:var(--muted)}
-    nav{display:flex; gap:14px; flex-wrap:wrap; align-items:center}
-    .btn{display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border-radius:999px;
-      border:1px solid var(--line); background:#fff; color:var(--text); font-size:14px; cursor:pointer}
-    .btn.primary{background:var(--brand); border-color:var(--brand); color:#fff}
-    .btn.primary:hover{background:var(--brand2); text-decoration:none}
-    .btn:focus{outline:3px solid rgba(15,118,110,.25); outline-offset:2px}
-    .lang{display:flex; gap:8px; align-items:center}
-    .pill{padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:#fff; cursor:pointer; font-size:13px}
-    .pill.active{background:rgba(15,118,110,.10); border-color:rgba(15,118,110,.35); color:var(--brand2); font-weight:600}
-    .badge{display:inline-flex; gap:8px; align-items:center; padding:8px 10px; border-radius:999px; border:1px solid var(--line); background:#fff; color:var(--muted); font-size:13px}
-    .hero{padding:20px 0 10px}
-    h1{margin:8px 0 10px; font-size:34px; line-height:1.15}
-    .lead{font-size:16px; color:var(--muted); max-width:80ch}
-    .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:18px}
-    .grid{display:grid; grid-template-columns:1.05fr .95fr; gap:14px}
-    .section{padding:12px 0}
-    .section h2{font-size:20px; margin:0 0 10px}
-    ul{margin:10px 0 0 18px}
-    li{margin:6px 0}
-    footer{border-top:1px solid var(--line); margin-top:18px}
-    .foot{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; padding:18px 24px; color:var(--muted); font-size:13px}
-    @media (max-width:900px){
-      .grid{grid-template-columns:1fr}
-      .topbar{flex-direction:column; align-items:flex-start}
-      h1{font-size:30px}
-    }
-    /* Language toggling */
-    [data-lang]{display:none}
-    html[data-active-lang="es"] [data-lang="es"]{display:block}
-    html[data-active-lang="en"] [data-lang="en"]{display:block}
+
+:root{
+  --bg:#F7F4EF;        /* arena suave (PDF) */
+  --text:#2B2B2B;      /* gris oscuro cálido */
+  --muted:#6E6E6E;     /* gris medio cálido */
+  --line:#DDD6CC;      /* líneas / separadores */
+  --brand:#9C8B6D;     /* acento principal */
+  --brand2:#7E6F55;    /* acento oscuro */
+  --card:#FFFFFF;      /* tarjetas */
+  --radius:16px;
+}
+
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.55;}
+a{color:var(--brand2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:24px}
+header{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#ffffff, var(--bg))}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px}
+.logo{display:flex;flex-direction:column;gap:2px}
+.logo strong{font-size:18px;letter-spacing:.2px}
+.logo span{font-size:13px;color:var(--muted)}
+nav{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:999px;
+  border:1px solid var(--line);background:#fff;color:var(--text);font-size:14px;cursor:pointer}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.btn.primary:hover{background:var(--brand2);text-decoration:none}
+.btn:focus{outline:3px solid rgba(156,139,109,.25);outline-offset:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.section{padding:18px 0}
+.section h2{font-size:22px;margin:0 0 10px}
+.muted{color:var(--muted)}
+ul{margin:10px 0 0 18px}
+li{margin:6px 0}
+footer{border-top:1px solid var(--line);margin-top:18px}
+.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:18px 24px;color:var(--muted);font-size:13px}
+.lang{display:flex;gap:8px;align-items:center}
+.pill{padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:13px}
+.pill.active{background:rgba(156,139,109,.16);border-color:rgba(126,111,85,.45);color:var(--brand2);font-weight:700}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;border:1px solid var(--line);
+  background:#fff;color:var(--muted);font-size:13px}
+[data-lang]{display:none}
+html[data-active-lang="es"] [data-lang="es"]{display:block}
+html[data-active-lang="en"] [data-lang="en"]{display:block}
+@media (max-width:900px){
+  .topbar{flex-direction:column;align-items:flex-start}
+}
+
+.hero-cover{
+  border-bottom:1px solid var(--line);
+  background:
+    linear-gradient(rgba(247,244,239,.88), rgba(247,244,239,.88)),
+    url('hero.jpg') center/cover no-repeat;
+}
+.hero{padding:22px 0 12px}
+h1{margin:8px 0 10px;font-size:34px;line-height:1.15}
+.lead{font-size:16px;color:var(--muted);max-width:85ch}
+.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:14px}
+@media (max-width:900px){.grid{grid-template-columns:1fr}h1{font-size:30px}}
   </style>
 </head>
 <body>
@@ -65,12 +79,15 @@
     <nav>
       <a class="btn" href="index.html" data-lang="es">Inicio</a>
       <a class="btn" href="index.html" data-lang="en">Home</a>
+
       <a class="btn" href="index.html#services" data-lang="es">Servicios</a>
       <a class="btn" href="index.html#services" data-lang="en">Services</a>
+
       <a class="btn primary" href="index.html#contact" data-lang="es">Contacto</a>
       <a class="btn primary" href="index.html#contact" data-lang="en">Contact</a>
 
       <span class="badge">📍 Rionegro, Antioquia · 📞 +57 313 613 8748 · ✉️ cristina.leon@registroslatam.com</span>
+
       <div class="lang" aria-label="Language toggle">
         <button class="pill active" id="btn-es" type="button">ES</button>
         <button class="pill" id="btn-en" type="button">EN</button>
@@ -79,45 +96,54 @@
   </div>
 </header>
 
+<section class="hero-cover">
+  <main class="wrap">
+    <section class="hero">
+      <h1 data-lang="es">Cristina León, M.Sc., Ph.D. — Ciencias Químicas</h1>
+      <h1 data-lang="en">Cristina León, M.Sc., Ph.D. — Chemical Sciences</h1>
+
+      <p class="lead" data-lang="es">
+        Química con maestría y doctorado en Ciencias Químicas, especializada en química analítica, con +20 años de experiencia en investigación,
+        docencia y gestión regulatoria en los sectores agroquímico y alimentario (certificada como auditora interna ISO 22000).
+        Especialista en planeación de proyectos y liderazgo de equipos técnicos, con el cumplimiento normativo en registro, producción y control de calidad.
+        Consolidada experiencia en implementación y validación de métodos analíticos mediante espectrometría y cromatografía con diversidad de detectores,
+        y dominio de la norma ISO 17025.
+      </p>
+
+      <p class="lead" data-lang="en">
+        Chemist with a master's degree and PhD in Chemical Sciences, specializing in analytical chemistry, with +20 years of experience in research,
+        teaching and regulatory management in the agrochemical and food sectors (certified as an ISO 22000 internal auditor).
+        Specialist in project planning and leadership of technical teams, with regulatory compliance in registration, production and quality control.
+        Consolidated experience in implementation and validation of analytical methods by spectrometry and chromatography with a variety of detectors,
+        and mastery of the ISO 17025 standard.
+      </p>
+    </section>
+  </main>
+</section>
+
 <main class="wrap">
-  <section class="hero">
-    <h1 data-lang="es">Cristina León, M.Sc., Ph.D. — Ciencias Químicas</h1>
-    <h1 data-lang="en">Cristina León, M.Sc., Ph.D. — Chemical Sciences</h1>
-
-    <p class="lead" data-lang="es">
-      Química con maestría y PhD en Ciencias Químicas, con especialización en química analítica y más de 20 años de experiencia
-      en investigación, docencia y gestión regulatoria en los sectores agroquímico y de alimentos (auditora interna ISO 22000).
-      Experiencia consolidada en implementación y validación de métodos analíticos (espectrometría y cromatografía) y dominio de ISO 17025.
-    </p>
-    <p class="lead" data-lang="en">
-      Chemist with a master's degree and PhD in Chemical Sciences, specializing in analytical chemistry, with 20+ years of experience
-      in research, teaching and regulatory management in the agrochemical and food sectors (certified as an ISO 22000 internal auditor).
-      Strong experience in implementation and validation of analytical methods (spectrometry and chromatography) and mastery of ISO 17025.
-    </p>
-  </section>
-
   <section class="grid">
     <div class="card section">
-      <h2 data-lang="es">Experiencia</h2>
-      <h2 data-lang="en">Experience</h2>
+      <h2 data-lang="es">Experiencia Empresa</h2>
+      <h2 data-lang="en">Company Experience</h2>
       <ul data-lang="es">
-        <li>Regulatory Affairs Manager LATAM — Elemental Enzymes (2023–actualidad)</li>
+        <li>Gerente de Asuntos Regulatorios LATAM — Elemental Enzymes (2023–2025)</li>
         <li>Coordinadora de Producción y Control de Calidad — Gowan Colombia S.A.S (2022)</li>
         <li>Jefe de I+D — Ecoflora S.A.S (2018–2021)</li>
       </ul>
       <ul data-lang="en">
-        <li>Regulatory Affairs Manager LATAM — Elemental Enzymes (2023–current)</li>
+        <li>Regulatory Affairs Manager LATAM — Elemental Enzymes (2023–2025)</li>
         <li>Production and Quality Control Coordinator — Gowan Colombia S.A.S (2022)</li>
-        <li>Head of R&D — Ecoflora S.A.S (2018–2021)</li>
+        <li>Head of R&amp;D — Ecoflora S.A.S (2018–2021)</li>
       </ul>
     </div>
 
     <div class="card section">
-      <h2 data-lang="es">Docencia</h2>
-      <h2 data-lang="en">Teaching</h2>
+      <h2 data-lang="es">Experiencia Docencia</h2>
+      <h2 data-lang="en">Teaching Experience</h2>
       <ul data-lang="es">
-        <li>Profesora de tiempo completo — Universidad de Antioquia (2023)</li>
-        <li>Profesora y Jefe de Laboratorios — Universidad del Quindío (2007–2012)</li>
+        <li>Profesora Catedrática — Universidad de Antioquia (2023)</li>
+        <li>Docente y Jefe de Laboratorios — Universidad del Quindío (2007–2012)</li>
       </ul>
       <ul data-lang="en">
         <li>Full Professor — University of Antioquia (2023)</li>
@@ -132,7 +158,7 @@
         <li>PhD en Ciencias Químicas — Universidad de Antioquia (2018)</li>
         <li>Maestría en Química — Universidad del Quindío (2011)</li>
         <li>Química — Universidad del Quindío (2002)</li>
-        <li>Auditora interna ISO 22000:2018 — SGS Colombia</li>
+        <li>Auditora Interna ISO 22000:2018 — SGS Colombia</li>
       </ul>
       <ul data-lang="en">
         <li>PhD in Chemical Sciences — University of Antioquia (2018)</li>
@@ -143,11 +169,11 @@
     </div>
 
     <div class="card section">
-      <h2 data-lang="es">Publicaciones y conferencias</h2>
-      <h2 data-lang="en">Publications & presentations</h2>
+      <h2 data-lang="es">Publicaciones y Ponencias</h2>
+      <h2 data-lang="en">Publications & Presentations</h2>
       <p class="lead" data-lang="es">
         Autora de artículos en <em>Chemosphere</em>, <em>Toxicon</em> y <em>Environmental Monitoring and Assessment</em>.
-        Conferencista en congresos internacionales de cromatografía y toxicología ambiental.
+        Ponente en congresos internacionales sobre cromatografía y toxicología ambiental.
       </p>
       <p class="lead" data-lang="en">
         Author of articles in <em>Chemosphere</em>, <em>Toxicon</em> and <em>Environmental Monitoring and Assessment</em>.
@@ -165,30 +191,24 @@
 </footer>
 
 <script>
-  (function(){
-    const root = document.documentElement;
-    root.setAttribute("data-active-lang", "es");
+(function(){
+  const root=document.documentElement;
+  const btnEs=document.getElementById("btn-es");
+  const btnEn=document.getElementById("btn-en");
 
-    const btnEs = document.getElementById("btn-es");
-    const btnEn = document.getElementById("btn-en");
+  function setLang(lang){
+    root.setAttribute("data-active-lang", lang);
+    btnEs.classList.toggle("active", lang==="es");
+    btnEn.classList.toggle("active", lang==="en");
+    try{localStorage.setItem("rl_lang", lang);}catch(e){}
+  }
 
-    function setLang(lang){
-      root.setAttribute("data-active-lang", lang);
-      btnEs.classList.toggle("active", lang === "es");
-      btnEn.classList.toggle("active", lang === "en");
-      try{ localStorage.setItem("rl_lang", lang); }catch(e){}
-    }
+  btnEs.addEventListener("click", ()=>setLang("es"));
+  btnEn.addEventListener("click", ()=>setLang("en"));
 
-    btnEs.addEventListener("click", ()=>setLang("es"));
-    btnEn.addEventListener("click", ()=>setLang("en"));
-
-    try{
-      const saved = localStorage.getItem("rl_lang");
-      if(saved === "en") setLang("en");
-    }catch(e){}
-
-    document.getElementById("year").textContent = new Date().getFullYear();
-  })();
+  try{const saved=localStorage.getItem("rl_lang"); if(saved==="en") setLang("en");}catch(e){}
+  document.getElementById("year").textContent=new Date().getFullYear();
+})();
 </script>
 </body>
 </html>
